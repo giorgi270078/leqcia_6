@@ -1,0 +1,35 @@
+.relative-box{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    background-color: darkgreen;
+    margin: 0 auto;
+
+    transition: all 4s linear 1s;s
+}
+.relative-box:hover{  /*animacia feris shecvla mausis gadatarebis dros*/
+    
+    background-color: blue;
+    
+}
+
+
+.absolutte-box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*itemis centrshi dasma shua gulis martva*/
+    
+    transition-property: all; /*yvelaferzeaketebs tanabar rejimshi*/
+    transition-duration: 3s;  /*xangrdzlivobva ramden xanshi moxdec cvlileba*/
+    transition-timing-function:  linear; /*rogor stilshi moxdes gadaadgileba linear aris tanabari sichqarit modzraoba*/
+    /*transition-delay: 2s; /*mausis shexebidan randeb wamshi gvinda anodzravdes*/
+}
+
+.absolutte-box:hover{
+    background-color: chartreuse;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
